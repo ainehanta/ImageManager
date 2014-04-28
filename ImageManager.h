@@ -14,7 +14,7 @@ typedef struct _ImageList ImageList;
 static ImageList * _imageList;
 
 int imageManagerInit(void);
-int imageManagerDestroy(void);
+void imageManagerDestroy(void);
 int imageManagerGetImage(const char * const filename);
 int imageManagerDeleteImage(const int filehandle);
 

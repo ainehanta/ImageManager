@@ -10,6 +10,8 @@ all : $(OBJS)
 .c.o :
 	$(CC) -c $<
 
-DxMock.c : DxMock.h
+clean :
+	rm -f *.o $(TARGET)
 
+DxMock.c : DxMock.h
 ImageManager.c : ImageManager.h
